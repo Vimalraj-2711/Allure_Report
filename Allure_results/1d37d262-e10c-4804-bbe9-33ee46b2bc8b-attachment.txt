@@ -1,0 +1,6 @@
+Alert Text: I am a JS Alert
+Result message: You successfully clicked an alert
+Alert: I am a JS Confirm
+Result message: You clicked: Cancel
+Alert: I am a JS prompt
+Result message: You entered: Vimal

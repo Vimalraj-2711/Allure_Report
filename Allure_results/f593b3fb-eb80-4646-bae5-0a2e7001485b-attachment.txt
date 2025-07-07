@@ -1,0 +1,4 @@
+Opened practice successfully
+Opened blog successfully
+Opened courses successfully
+Opened contact successfully

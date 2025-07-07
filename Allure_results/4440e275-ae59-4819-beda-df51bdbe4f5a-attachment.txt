@@ -1,0 +1,6 @@
+Opened assessments successfully
+Opened courses successfully
+Opened practice successfully
+Opened code successfully
+Opened lsrw successfully
+Opened blog successfully
