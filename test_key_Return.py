@@ -1,0 +1,26 @@
+import pytest
+import allure
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+
+@allure.title("Google Search Test")
+@allure.description("Search for 'Amazon' on Google and verify search results page.")
+def test_google_search():
+    driver = webdriver.Chrome()
+    
+    with allure.step("Open Google homepage"):
+        driver.get("https://www.google.com/")
+        driver.maximize_window()
+        time.sleep(2)
+    
+    with allure.step("Enter search query 'Amazon'"):
+        search_box = driver.find_element(By.NAME, "q")
+        search_box.send_keys("Amazon")
+    
+    with allure.step("Submit the search"):
+        search_box.send_keys(Keys.RETURN)
+        time.sleep(3)
+    
+    driver.quit()
